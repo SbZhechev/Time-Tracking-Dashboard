@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,61 +16,118 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <main>
+    <article class="card userCard">
+      <section class="userInfo">
+        <img class="userPicture" src="./images/image-jeremy.png">
+        <div class="reportBlock">
+          <p class="report">Report for</p>
+          <p class="username">Jeremy Robson</p>
+        </div>
+      </section>
+      <section class="timePeriod">
+        <p class="timePeriodOption">Daily</p>
+        <p class="timePeriodOption">Weekly</p>
+        <p class="timePeriodOption">Monthly</p>
+      </section>
+    </article>
 
-  Daily
-  Weekly
-  Monthly
+    <article class="card activityCard workCard">
+      <section class="iconContainer">
+        <img src="./images/icon-work.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Work</p>
+          <p class="activityTime">32hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 36hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <article class="card activityCard playCard">
+      <section class="iconContainer">
+        <img src="./images/icon-play.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Play</p>
+          <p class="activityTime">10hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 8hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <article class="card activityCard studyCard">
+      <section class="iconContainer">
+        <img src="./images/icon-study.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Study</p>
+          <p class="activityTime">4hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 7hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <article class="card activityCard exerciseCard">
+      <section class="iconContainer">
+        <img src="./images/icon-exercise.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Exercise</p>
+          <p class="activityTime">4hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 5hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <article class="card activityCard socialCard">
+      <section class="iconContainer">
+        <img src="./images/icon-social.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Social</p>
+          <p class="activityTime">5hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 10hrs</p>
+        </div>
+      </section>
+    </article>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+    <article class="card activityCard selfCareCard">
+      <section class="iconContainer">
+        <img src="./images/icon-self-care.svg" alt="letter">
+      </section>
+      <section class="activityInfo">
+        <div class="activitiInfoColumn activitiInfoColumnLeft">
+          <p>Self Care</p>
+          <p class="activityTime">2hrs</p>
+        </div>
+        <div class="activitiInfoColumn activitiInfoColumnRight">
+          <img class="settings" src="./images/icon-ellipsis.svg">
+          <p class="previousPeriod" id="previousPeriod">Last Week - 2hrs</p>
+        </div>
+      </section>
+    </article>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
